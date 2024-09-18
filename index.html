@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>youarebrainroted.cc</title>
-    <link rel="icon" id='icon' type="image/png" href="https://lh4.googleusercontent.com/RsXPN3tDDjCPPiPYLmqUjek5u5Azp2VPaguWugGLS_hfooHqQTrMO8Arknb51NCl06s6J6lV8IaPKvCO4lz3AK6cLHW95CmeprFm6SeVfWWFfb78-giSW_RJ-3lx99sXtQ=w1280">
+    <title>brainrottin</title>
+    <link rel="icon" id='icon' type="image/png" href="toifazber.jpg">
     <style>
         body {
             display: flex;
@@ -125,7 +125,27 @@ audio.play();
     </style>
 </head>
 <body>
-    <img draggable='false' src="https://lh4.googleusercontent.com/S5EM8_ZC2oJPabGkRhHLXQAme1gg0wHoGsPmsAxKzKFtBfu0xRxSgOI-8_wjtg2-pKSnXyr9opQI3je4X_3NmW2_CyKlNt62yUSm5Q8dLouI622Z38VsYNLkqtMrMcRnUg=w1280" alt="ohh hell naaah">
+    <img draggable='false' src="toifazber.jpg" alt="ohh hell naaah">
+`, `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRCAT.exe</title>
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        img {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <img draggable='false' src="mrcat.png" alt="ohh hell naaah">
 `];
     const button = document.createElement('button');
     button.innerText = 'View';
@@ -135,7 +155,7 @@ let windows = [];
 
 button.addEventListener('click', () => {
     const fav = document.getElementById('icon')
-    icon.href = 'https://lh4.googleusercontent.com/RsXPN3tDDjCPPiPYLmqUjek5u5Azp2VPaguWugGLS_hfooHqQTrMO8Arknb51NCl06s6J6lV8IaPKvCO4lz3AK6cLHW95CmeprFm6SeVfWWFfb78-giSW_RJ-3lx99sXtQ=w1280'
+    icon.href = 'toifazber.jpg'
     play();
     const initialWidth = 75;
     const initialHeight = 75;
@@ -149,7 +169,7 @@ button.addEventListener('click', () => {
     );
     if (newWindow) {
         windows.push(newWindow);
-        const rand = Math.floor(Math.random() * 2)
+        const rand = Math.floor(Math.random() * 3)
         newWindow.document.write(chtml[rand]);
         newWindow.document.close();
         function animate() {
@@ -162,8 +182,6 @@ button.addEventListener('click', () => {
             newWindow.focus();
             requestAnimationFrame(animate);
         }
-
-        // Запуск анимации
         animate();
     } else {
         console.error("Erm what a sigma");
