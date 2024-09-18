@@ -66,8 +66,8 @@
     <script>
     async function play() {
         const audio = new Audio();
-        const sources = ['skibidi.mp3', 'donpollo.mp3', 'nerd.mp3'];
-        const rand = Math.floor(Math.random() * 3)
+        const sources = ['skibidi.mp3', 'donpollo.mp3', 'nerd.mp3', 'linga.mp3'];
+        const rand = Math.floor(Math.random() * 4)
         audio.src = sources[rand]
         audio.addEventListener('ended', function() {
     this.currentTime = 0;
